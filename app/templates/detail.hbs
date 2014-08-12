@@ -1,0 +1,72 @@
+<header id="food-name">
+	<h1>{{#link-to 'search'}}<span><</span>{{/link-to}}Tomato Pork Pasta</h1>
+</header>
+
+<div id="food-pic">
+	<img src="/assets/images/mzkc.jpg">
+</div>
+
+<div id="rating">
+	<p><span id='ratesNumber'>100 Rates</span>{{star-rating starRating=4 maxStars=5}}</p>
+</div>
+</br>
+<div id="content">
+	<div id="food-list">
+		<h2>Food material :</h2></br>
+		<table>
+			<tr>
+				<td>pasta</td>
+				<td>350g</td>
+			</tr>
+			<tr>
+				<td>tomatos</td>
+				<td>one</td>
+			</tr>
+			<tr>
+				<td>port</td>
+				<td>250g</td>
+			</tr>
+			<tr>
+				<td>onions</td>
+				<td>200g</td>
+			</tr>
+		</table>
+	</div>	
+	<div id="step-layer">
+		<h3>Cooking Step :</h3>
+		<ol>
+			<li>Mince the pork ,then add some oil, salt, pepper ,stir spare as your taste</li>
+			<li>Peel and chop tomatoes then mixed with chopped onions</li>
+			<li>...</li>
+		</ol>
+    </div>
+    <div class="commentsArea">
+		<a {{action 'toggleReviews'}} class="reviews">
+	      {{#if showReviews}}
+	        Clear
+	      {{else}}
+	        Have a comment?
+	      {{/if}}
+        </a>
+        {{#if showReviews}}
+		 <ul class="writeReviews">
+		  <li class="rating">
+		    <label>Rating</label>
+		    <br>
+		    {{star-rating starRating=rating maxStars=5}}
+		  </li>
+		  <li class="name">
+		    <label>Name</label>
+		    <br>
+		    {{input class="formcontrol" type="text" value=name placeholder="Your name"}}
+		  </li>
+		  <li class="comments">
+		    <label>Comment</label>
+		    <br>
+		    {{textarea class="formcontrol" type="checkbox" value=note placeholder="Your comments"}}
+		  </li>
+		  </ul>
+		<button class="submitComments" type="submit">Submit Comment</button>
+		{{/if}}
+	</div>
+</div>

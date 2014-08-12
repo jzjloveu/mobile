@@ -1,0 +1,41 @@
+<div class="search-rec">
+  <ul class="hotsearch">
+    <li>
+      <span>&bull;</span>
+      <a href="">Breakfast</a>
+    </li>
+    <li>
+      <span>&bull;</span>
+      <a href="">Lunch</a>
+    </li>
+    <li>
+      <span>&bull;</span>
+      <a href="">Dinner</a>
+    </li>
+    <li>
+      <span>&bull;</span>
+      <a href="">Dessert</a>
+    </li>
+  </ul>
+</div>
+{{flex-slider sliders=slidesData}}
+   <br/>
+   <div id="category">
+     <ul>
+        {{#each list}}
+        <li><span {{action id}}>{{id}}</span></li>
+        {{/each}}
+      </ul>
+  </div>
+  <div id="subcategory">
+    <ul class="table">
+    {{#each sublist}}
+     <li>
+       <img {{bind-attr src=src}} width="60" height="60">
+       <br>
+       <span class="category">{{imageID}}</span>
+     </li>
+     {{/each}}
+     </ul>
+  </div>   
+  {{outlet}}
