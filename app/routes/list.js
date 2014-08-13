@@ -2,7 +2,15 @@ import Ember from 'ember';
 
 var ListRoute = Ember.Route.extend({
 	model: function() {
-		return [];
+		var test = [
+		  {
+		  	username: "Jeff",
+		  	commentTime: "Jun. 26, 2014",
+		  	rate: 4,
+		  	comment: "Great!"
+		  }
+	    ];
+		return test;
 	}
 });
 

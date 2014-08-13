@@ -1,5 +1,5 @@
 {{#each star in stars}}
-    <span>
+    <span {{action click star}}>
       {{#if star.empty}}
       <span  style="color: #aaa;"> ☆</span>
       {{else}}

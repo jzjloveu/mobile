@@ -1,1 +1,11 @@
-test
+{{#each model}}
+<div class="userdetail">
+ <span>
+ <span><strong>{{username}}</strong></span> <span>{{commentTime}}</span>
+ </span>
+ <br>
+ {{star-rating starRating=rate maxStars=5}}
+ <br>
+ <span>{{comment}}</span>
+</div>
+ {{/each}}
