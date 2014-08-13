@@ -15,33 +15,42 @@
 	<div id="food-list">
 		<h2>Food material :</h2></br>
 		<table>
-		   <tr>
-		     <td>{{m.name}}</td>
-		     <td>{{m.count}}</td>
-		   </tr>
+		{{#each ingredients}}
+		
+		    <div>{{i-name}}</div>
+		    <div>{{i-count}}</div>
+	
+		{{/each}}
 		</table>
 	</div>	
 	<div id="step-layer">
 		<h3>Cooking Step :</h3>
 		<ol>
-		<li>test</li>
+		{{#each step}}
+		<li>{{step}}</li>
+		{{/each}}
 		</ol>
     </div>
- {{/with}}
-    <div class="commentsArea">
-		<a {{action 'toggleReviews'}} class="reviews">
+</div>
+{{/with}}
+<div class="subContent">
+<a class="viewComments">
+<img src="/assets/comments.jpeg">4 Comments
+</a>
+<a {{action 'toggleReviews'}} class="reviews">
 	      {{#if showReviews}}
 	        Clear
 	      {{else}}
 	        Have a comment?
 	      {{/if}}
-        </a>
+</a>
+<div class="commentsArea">
         {{#if showReviews}}
 		 <ul class="writeReviews">
 		  <li class="rating">
 		    <label>Rating</label>
 		    <br>
-		    {{star-rating starRating=rating maxStars=5}}
+		    {{star-rating starRating=0 maxStars=5}}
 		  </li>
 		  <li class="name">
 		    <label>Name</label>
@@ -56,5 +65,5 @@
 		  </ul>
 		<button class="submitComments" type="submit">Submit Comment</button>
 		{{/if}}
-	</div>
+</div>
 </div>
