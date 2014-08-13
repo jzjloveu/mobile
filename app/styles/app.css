@@ -304,7 +304,7 @@ label {
   margin-left: 9%;
 }
 .subContent {
-  border: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
   margin-top: 40px;
 }
 .subContent a {
@@ -317,8 +317,7 @@ label {
 .userdetail {
   margin-left: 2%;
   margin-top: 15px;
-  height: 80px;
-  border-bottom: 1px solid #cccccc;
+  background: #F8F6F5;
 }
 
 

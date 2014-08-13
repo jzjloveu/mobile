@@ -7,10 +7,13 @@ var StarRatingComponent = Ember.Component.extend({
     starRating: 0,
     stars: [],
     tagName: 'span',
+    clickable:false,
     actions: {
-        click: function(star){
+        click: function(star,clickable){
+            if(clickable){    
             this.set('starRating', star.index);
             this.sendAction('action', star.index);
+            }
         }
     },
     setRating: function() {
