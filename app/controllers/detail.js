@@ -1,5 +1,7 @@
 import Ember from 'ember';
-var DetailController = Ember.ArrayController.extend({
+var DetailController = Ember.Controller.extend({
+	queryParams: ['dishId'],
+	dishId:'',
 	showReviews: true,
 	actions:{
 		/*
