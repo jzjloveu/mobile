@@ -2,7 +2,7 @@
   <li class="rating">
     <label>Rating</label>
     <br>
-    {{star-rating starRating=0 maxStars=5}}
+    {{star-rating starRating=rate maxStars=5}}
   </li>
   <li class="name">
     <label>Name</label>
@@ -15,4 +15,4 @@
     {{textarea class="formcontrol" type="checkbox" value=note placeholder="Your comments"}}
   </li>
   </ul>
-<button class="submitComments" type="submit">Submit Comment</button>
+<button {{action submit}} class="submitComments" type="submit">Submit Comment</button>
