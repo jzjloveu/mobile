@@ -7,7 +7,10 @@ var Router = Ember.Router.extend({
 Router.map(function() {
 	this.route('home');
 	this.route('search', { path: '/home/search' });
-	this.route('detail');
+	this.resource('detail', function() {
+		this.resource('list');
+		this.resource('comments');
+	})
 });
 
 export default Router;

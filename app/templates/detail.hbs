@@ -34,36 +34,14 @@
 </div>
 {{/with}}
 <div class="subContent">
-<a class="viewComments">
+{{#link-to 'list' class="viewComments"}}
 <img src="/assets/comments.jpeg">4 Comments
-</a>
-<a {{action 'toggleReviews'}} class="reviews">
-	      {{#if showReviews}}
-	        Clear
-	      {{else}}
-	        Have a comment?
-	      {{/if}}
-</a>
+{{/link-to}}
+{{#link-to 'comments' class="reviews"}}
+	Have a comment?
+{{/link-to}}
 <div class="commentsArea">
-        {{#if showReviews}}
-		 <ul class="writeReviews">
-		  <li class="rating">
-		    <label>Rating</label>
-		    <br>
-		    {{star-rating starRating=0 maxStars=5}}
-		  </li>
-		  <li class="name">
-		    <label>Name</label>
-		    <br>
-		    {{input class="formcontrol" type="text" value=name placeholder="Your name"}}
-		  </li>
-		  <li class="comments">
-		    <label>Comment</label>
-		    <br>
-		    {{textarea class="formcontrol" type="checkbox" value=note placeholder="Your comments"}}
-		  </li>
-		  </ul>
-		<button class="submitComments" type="submit">Submit Comment</button>
-		{{/if}}
+{{outlet}}
 </div>
 </div>
+
