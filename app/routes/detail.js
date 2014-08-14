@@ -15,7 +15,6 @@ var DetailRoute = Ember.Route.extend({
 	      },
 	      type: 'POST',
 	      success: function(data) {
-	      	console.log('here' + data);
 	        return data;
 	      }
 	    });

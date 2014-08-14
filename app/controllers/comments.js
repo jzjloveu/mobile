@@ -1,4 +1,5 @@
 import Ember from 'ember';
+
 var CommentsController = Ember.Controller.extend({
 	rate: 0,
 	name: '',
@@ -14,7 +15,8 @@ var CommentsController = Ember.Controller.extend({
 			        "userName": self.get('name'),
 			        "dishId": currId,
 			        "content": self.get("note"),
-			        "rate": self.get('rate')
+			        "rate": self.get('rate'),
+			        "date": $.datepicker.formatDate('M dd, yy', new Date())
 			      },
 			      type: 'POST',
 			      success: function(data) {
