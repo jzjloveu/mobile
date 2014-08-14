@@ -23,19 +23,12 @@
    <div id="category">
      <ul>
         {{#each list}}
-        <li><span {{action id}}>{{id}}</span></li>
+        <li>
+        {{#link-to 'category' (query-params categoryId=id)}}
+        {{id}}
+        {{/link-to}}
+        </li>
         {{/each}}
       </ul>
   </div>
-  <div id="subcategory">
-    <ul class="table">
-    {{#each sublist}}
-     <li>
-       <img {{bind-attr src=src}} width="60" height="60">
-       <br>
-       <span class="category">{{imageID}}</span>
-     </li>
-     {{/each}}
-     </ul>
-  </div>   
   {{outlet}}
