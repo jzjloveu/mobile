@@ -1,5 +1,13 @@
-var HomeController = Ember.Controller.extend({
-	list: [
+import Ember from 'ember';
+
+var CategoryRoute = Ember.Route.extend({
+	queryParams: {
+	   categoryId: {
+	    refreshModel: true
+	   }
+    },
+
+    categoryList: [
 	  {
 	  	id: 'Meat',
 	  	lists: [
@@ -145,36 +153,15 @@ var HomeController = Ember.Controller.extend({
 	  	]
 	  }
 	],
-    // we will call the top favorites data from DB later
-	slidesData: [
-      {
-        name: 'macaron',
-        src: '/assets/images/macaron.jpg',
-        description: ''
-      },
-      {
-        name: 'macaron',
-        src: '/assets/images/macaron.jpg',
-        description: ''
-      },
-      {
-        name: 'macaron',
-        src: '/assets/images/macaron.jpg',
-        description: ''
-      }
-    ],
 
-	sublist: [],
-
-	updateSubList: function(id) {
-		var tmp = this.get('list').findBy('id', id).lists;
-		this.set('sublist', tmp);
+    filterCategory: function(currid) {
+	    console.log('here' + currid);
+	    return this.get('categoryList').findBy('id', currid).lists;
 	},
 
-	init: function(){
-		var self = this;
-		self.updateSubList('Meat');
-	}
+    model: function(params) {
+    	return this.filterCategory(params.categoryId);
+    }
 });
 
-export default HomeController;
+export default CategoryRoute;
