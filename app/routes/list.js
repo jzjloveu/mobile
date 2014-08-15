@@ -1,11 +1,10 @@
 import Ember from 'ember';
 
 var ListRoute = Ember.Route.extend({
-	model: function() {
+	model: function(controller) {
 		var self = this;
 		var test =   
 		  	$.ajax({
-			    //record the data
 			      url: 'http://localhost:3000/comment/get',
 			      data:  {
 			      	dishId: self.controllerFor('detail').dishId
