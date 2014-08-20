@@ -341,10 +341,7 @@ a {
   border: none;
   background: url(../assets/images/bk1.png) no-repeat;  
 }
-::-webkit-input-placeholder { position:relative; left: -5% }
-::-moz-placeholder { position:relative; left: -5%} /* firefox 19+ */
-:-ms-input-placeholder { position:relative; left: -5% } /* ie */
-input:-moz-placeholder { position:relative; left: -5% }
+
 
 
 
