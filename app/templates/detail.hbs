@@ -4,7 +4,7 @@
 </header>
 
 <div id="food-pic">
-	<img {{bind-attr src=imageUrl}}>
+	<img {{bind-attr src=imageUrl}} >
 </div>
 
 <div id="rating">
@@ -16,10 +16,7 @@
 		<h2>Food material :</h2></br>
 		<table>
 		{{#each ingredients}}
-		
-		    <div>{{i-name}}</div>
-		    <div>{{i-count}}</div>
-	
+		    <div>{{name}}:{{count}}</div>
 		{{/each}}
 		</table>
 	</div>	
