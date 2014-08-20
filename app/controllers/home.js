@@ -1,3 +1,4 @@
+
 var HomeController = Ember.Controller.extend({
 	list: [
 	  {

@@ -4,7 +4,7 @@
 </header>
 
 <div id="food-pic">
-	<img {{bind-attr src=imageUrl}}>
+	<img {{bind-attr src=imageUrl}} >
 </div>
 
 <div id="rating">
@@ -16,10 +16,7 @@
 		<h2>Food material :</h2></br>
 		<table>
 		{{#each ingredients}}
-		
-		    <div>{{i-name}}</div>
-		    <div>{{i-count}}</div>
-	
+		    <div>{{name}}:{{count}}</div>
 		{{/each}}
 		</table>
 	</div>	
@@ -34,14 +31,14 @@
 </div>
 {{/with}}
 <div class="subContent">
-	{{#link-to 'list' class="viewComments"}}
-		<img src="/assets/comments.jpeg">{{commentNum}} Comments
-	{{/link-to}}
-	{{#link-to 'comments' class="reviews"}}
-		Have a comment?
-	{{/link-to}}
-	<div class="commentsArea">
-		{{outlet}}
-	</div>
+{{#link-to 'list' class="viewComments"}}
+<img src="/assets/comments.jpeg">{{commentNum}} Comments
+{{/link-to}}
+{{#link-to 'comments' class="reviews"}}
+	Have a comment?
+{{/link-to}}
+<div class="commentsArea">
+{{outlet}}
+</div>
 </div>
 
