@@ -147,9 +147,9 @@ var HomeController = Ember.Controller.extend({
 	],
     // we will call the top favorites data from DB later
 	slidesData: [
-      {
-        name: 'macaron',
-        src: '/assets/images/macaron.jpg',
+	  {
+        name: 'xican',
+        src: '/assets/images/xican.jpeg',
         description: ''
       },
       {
@@ -158,10 +158,20 @@ var HomeController = Ember.Controller.extend({
         description: ''
       },
       {
-        name: 'macaron',
-        src: '/assets/images/macaron.jpg',
+        name: 'spicypork',
+        src: '/assets/images/spicypork.jpg',
         description: ''
-      }
+      },
+      {
+        name: 'sushi',
+        src: '/assets/images/sushi.jpeg',
+        description: ''
+      },
+      {
+        name: 'cupcake',
+        src: '/assets/images/cupcakes.jpg',
+        description: ''
+      },
     ],
 
 	sublist: [],

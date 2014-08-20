@@ -1,3 +1,5 @@
+[data-ember-action] {cursor:pointer}
+
 * {
   font-family: "HelveticaNeue-Light", Arial;
   margin: 0px;
@@ -11,7 +13,7 @@ header {
   width: 100%;
   border: 1px solid #cccccc;
   position: fixed;
-  background-color: #01aef0;
+  background-color: #77D8A4;
 }
 header span {
   font-size: 32px;
@@ -42,7 +44,7 @@ header h1 {
   width: 90%;
   left: 5%;
   box-sizing: border-box;
-  border: 3px solid #01aef0;
+  border: 3px solid #40BE80;
   border-radius: 25px;
   background-size: 12px;
   background: url(../assets/images/bk1.png) no-repeat;
@@ -112,6 +114,7 @@ header h1 {
   margin-top:70px;
   width:100%;
   height:50px;
+  background-color: #A8F3CA;
 }
 #category li {
   display: inline;
@@ -119,7 +122,6 @@ header h1 {
   width: 25%;
   text-align: center;
   margin-top:15px;
-  border-bottom: 5px solid #cccccc;
 }
 #category span {
   text-decoration: none;
@@ -310,7 +312,7 @@ a {
   color: black;
 }
 .active {
-  border-bottom: 5px solid #01aef0;
+  font-weight:bold;
 }
 .userdetail {
   margin-left: 2%;
