@@ -28,7 +28,18 @@ var InputSearchComponent = Ember.Component.extend({
 			  "pudding",
 			  "puff",
 			  "clam",
-			  "pumpkin"
+			  "pumpkin",
+			  "Tomato",
+			  "Pork",
+			  "Pasta",
+			  "Sesame",
+			  "Grilled",
+			  "Grilled Pork",
+			  "Grilled Pork Loin",
+			  "Honey Chicken Kabobs",
+			  "Honey",
+			  "Garlic",
+			  "turkey"
 			];
 			$( "#tags" ).autocomplete({
 			  source: availableTags

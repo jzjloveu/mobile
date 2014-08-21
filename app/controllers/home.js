@@ -6,34 +6,27 @@ var HomeController = Ember.Controller.extend({
 	  	lists: [
 	  	  {
 	  	  	src: '/assets/images/beef.jpg',
-	  	  	imageID: 'Beef',
-	  	  	url: ''
+	  	  	imageID: 'Beef'
 	  	  },
 	  	  {
 	  	  	src: '/assets/images/pork.jpg',
-	  	  	imageID: 'Pork',
-	  	  	url: ''
-
+	  	  	imageID: 'Pork'
 	  	  },
 	  	  {
 	  	  	src: '/assets/images/chicken.jpg',
-	  	  	imageID: 'Chicken',
-	  	  	url: ''
+	  	  	imageID: 'Chicken'
 	  	  },
 	  	  {
 	  	  	src: '/assets/images/salmon.jpg',
-	  	  	imageID: 'Salmon',
-	  	  	url: ''
+	  	  	imageID: 'Salmon'
 	  	  },
 	  	  {
 	  	  	src: '/assets/images/turkey.jpg',
-	  	  	imageID: 'Turkey',
-	  	  	url: ''
+	  	  	imageID: 'Turkey'
 	  	  },
 	  	  {
 	  	  	src: '/assets/images/duck.jpg',
-	  	  	imageID: 'Duck',
-	  	  	url: ''
+	  	  	imageID: 'Duck'
 	  	  }
 	  	]
 	  },
@@ -42,34 +35,27 @@ var HomeController = Ember.Controller.extend({
 	  	lists: [
 	  	  {
 	  	  	src: '/assets/images/asparagus.jpg',
-	  	  	imageID: 'Asparagus',
-	  	  	url: ''
+	  	  	imageID: 'Asparagus'
 	  	  },
 	  	  {
 	  	  	src: '/assets/images/tofu.jpg',
-	  	  	imageID: 'Tofu',
-	  	  	url: ''
-
+	  	  	imageID: 'Tofu'
 	  	  },
 	  	  {
 	  	  	src: '/assets/images/lettuce.jpg',
-	  	  	imageID: 'Lettuce',
-	  	  	url: ''
+	  	  	imageID: 'Lettuce'
 	  	  },
 	  	  {
 	  	  	src: '/assets/images/carrot.jpg',
-	  	  	imageID: 'Carrot',
-	  	  	url: ''
+	  	  	imageID: 'Carrot'
 	  	  },
 	  	  {
 	  	  	src: '/assets/images/brocoli.jpg',
-	  	  	imageID: 'Brocoli',
-	  	  	url: ''
+	  	  	imageID: 'Brocoli'
 	  	  },
 	  	  {
 	  	  	src: '/assets/images/tomato.jpg',
-	  	  	imageID: 'Tomato',
-	  	  	url: ''
+	  	  	imageID: 'Tomato'
 	  	  }
 	  	]
 	  },
@@ -78,34 +64,27 @@ var HomeController = Ember.Controller.extend({
 	  	lists: [
 	  	  {
 	  	  	src: '/assets/images/toast.jpg',
-	  	  	imageID: 'Toast',
-	  	  	url: ''
+	  	  	imageID: 'Toast'
 	  	  },
 	  	  {
 	  	  	src: '/assets/images/cheesecake.jpeg',
-	  	  	imageID: 'Cheesecake',
-	  	  	url: ''
-
+	  	  	imageID: 'Cheesecake'
 	  	  },
 	  	  {
 	  	  	src: '/assets/images/macaroonsList.jpg',
-	  	  	imageID: 'Macaroon',
-	  	  	url: ''
+	  	  	imageID: 'Macaroon'
 	  	  },
 	  	  {
 	  	  	src: '/assets/images/pudding.jpg',
-	  	  	imageID: 'Pudding',
-	  	  	url: ''
+	  	  	imageID: 'Pudding'
 	  	  },
 	  	  {
 	  	  	src: '/assets/images/brownie.jpg',
-	  	  	imageID: 'Brownie',
-	  	  	url: ''
+	  	  	imageID: 'Brownie'
 	  	  },
 	  	  {
 	  	  	src: '/assets/images/puff.jpg',
-	  	  	imageID: 'Puff',
-	  	  	url: ''
+	  	  	imageID: 'Puff'
 	  	  }
 	  	]
 	  },
@@ -114,34 +93,27 @@ var HomeController = Ember.Controller.extend({
 	  	lists: [
 	  	  {
 	  	  	src: '/assets/images/lotusroot.png',
-	  	  	imageID: 'Lotusroot',
-	  	  	url: ''
+	  	  	imageID: 'Lotusroot'
 	  	  },
 	  	  {
 	  	  	src: '/assets/images/borscht.jpg',
 	  	  	imageID: 'Borscht',
-	  	  	url: ''
-
 	  	  },
 	  	  {
 	  	  	src: '/assets/images/mungbean.jpg',
-	  	  	imageID: 'Mungbean',
-	  	  	url: ''
+	  	  	imageID: 'Mungbean'
 	  	  },
 	  	  {
 	  	  	src: '/assets/images/chickensoup.jpg',
-	  	  	imageID: 'Chicken',
-	  	  	url: ''
+	  	  	imageID: 'Chicken'
 	  	  },
 	  	  {
 	  	  	src: '/assets/images/clamchowder.jpg',
-	  	  	imageID: 'Clam',
-	  	  	url: ''
+	  	  	imageID: 'Clam'
 	  	  },
 	  	  {
 	  	  	src: '/assets/images/pumpkin.jpg',
-	  	  	imageID: 'Pumpkin',
-	  	  	url: ''
+	  	  	imageID: 'Pumpkin'
 	  	  }
 	  	]
 	  }

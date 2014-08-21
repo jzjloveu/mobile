@@ -2,9 +2,11 @@
   <ul class="table">
     {{#each model}}
      <li>
+        {{#link-to 'search' (query-params keyword=imageID)}}
        <img {{bind-attr src=src}} width="70" height="70">
        <br>
        <span class="category">{{imageID}}</span>
+       {{/link-to}}
      </li>
      {{/each}}
   </ul>
