@@ -202,17 +202,18 @@ ul.search-list .dish-image {
   height: 230px;
 }
 #food-pic img {
-  top: 46px;
   height: 202px;
-  width: auto;
+  left: 50%;
+  margin-left: -66px;
   position: relative;
-  left: -112px;
-  margin-left: 50%;
+  top: 46px;
+  width: 220px;
 }
 #rating {
+  left: 50%;
   position: relative;
-  top:19px;
-  left:37%;
+  top: 19px;
+  margin-left: -74px;
 }
 #ratesNumber {
   color:#b3b3b1;
@@ -226,6 +227,12 @@ ul.search-list .dish-image {
   text-align: center;
   position: relative;
 }
+#food-list li{
+  list-style: none;
+}
+#iname {
+  margin-left: 0;
+}
 #food-list h2 {
   float: left;
   font-size: 20px;
@@ -234,35 +241,6 @@ ul.search-list .dish-image {
   margin-left: -5%;
   margin-bottom: 12px;
 }
-/*
-table {
-  width: 100%;
-  left: 0%;
-  font-size: 16px;
-  position: relative;
-  background: #E8FFC4;
-}
-table,
-td {
-  border: 2px solid #02C874;
-  border-collapse: collapse;
-}
-td {
-  height: 23px;
-}
-tr:hover {
-  background-color: #FFD9EC;
-  transition: background 1s ease;
-}
-table tr td:first-child {
-  color: #CE0000  ;
-  width: 60%;
-}
-table tr td:last-child {
-  color: #5B5B5B  ;
-  font-style: italic;
-}
-*/
 #step-layer {
   position: relative;
   height: auto;
