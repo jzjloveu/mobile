@@ -15,17 +15,6 @@ header {
   position: fixed;
   background-color: #77D8A4;
 }
-header span {
-  font-size: 32px;
-  position: absolute;
-  left: 2%;
-  top: -12px;
-  color: white;
-}
-#food-name span {
-  font-size: 22px;
-  top: -5px;
-}
 header h1 {
   position: relative;
   text-align: center;
@@ -33,6 +22,29 @@ header h1 {
   top: 10px;
   color: white;
 }
+header a {
+  font-size: 18px;
+  position: absolute;
+  left: 2%;
+  color: white;
+  text-decoration: none;
+}
+header span{
+  font-size: 32px;
+  bottom:-25px;
+  position: absolute;
+}
+header a:last-child{
+  font-size: 18px;
+  left: 99%;
+  position: absolute;
+  margin-left: -60px;
+}
+#food-name span {
+  font-size: 22px;
+  top: -5px;
+}
+
 #search-bar {
   position: relative;
   top: 45px;
@@ -128,11 +140,15 @@ header h1 {
 #category span {
   text-decoration: none;
 }
+#subcategory img {
+  border-radius: 14px;
+  box-shadow: 3px 3px 3px #888888;
+}
 #subcategory {
   margin-top: 10px;
 }
 ul.search-list {
-  margin-top: 44px;
+  margin-top: 60px;
   width: 100%;
   height: auto;
   padding-left: 0px;
@@ -162,10 +178,12 @@ ul.search-list .likes-number {
   top: 65px;
 }
 ul.search-list .dish-image {
-  height: 100px;
+  height: 91px;
   position: absolute;
   right: 6px;
-  top: 0;
+  margin-top: 4px;
+  box-shadow: 2px 2px 2px #888888;
+  border-radius: 15px;
 }
 /*detail*/
 #detail-page {
@@ -214,7 +232,7 @@ ul.search-list .dish-image {
   margin-left: -5%;
   margin-bottom: 12px;
 }
-
+/*
 table {
   width: 100%;
   left: 0%;
@@ -242,7 +260,7 @@ table tr td:last-child {
   color: #5B5B5B  ;
   font-style: italic;
 }
-
+*/
 #step-layer {
   position: relative;
   height: auto;
@@ -342,7 +360,43 @@ a {
   background: url(../assets/images/bk1.png) no-repeat;  
 }
 
+ #edit ul{
+  top: 90px;
+  position: fixed;
+  width: 85%;
+  left: 7%;
+  list-style-type: none;
+}
+ #edit ul li {
+  height: auto;
+  border: none;
+  width: 100%;
+  margin-top:7px;
 
-
+}
+ #edit ul li label {
+  font-size: 17px;
+  font-weight: bold;
+} 
+#edit ul li span {
+  color: gray;
+  font-size: 14px;
+  font-style: italic ;
+}
+ #edit ul li input,
+ #edit ul li textarea,
+ #edit ul li p {
+  font-size: 16px;
+  width: 100%;
+  height: 30px;
+  margin-top: 6px;
+}
+#edit ul li textarea{
+  height: 45px;
+}
+ #edit ul li .category{
+  width: 22px;
+  height: 15px;
+ }
 
 
