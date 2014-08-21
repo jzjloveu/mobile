@@ -121,29 +121,29 @@ var HomeController = Ember.Controller.extend({
     // we will call the top favorites data from DB later
 	slidesData: [
 	  {
-        name: 'xican',
+        name: 'Pecking Duck',
         src: '/assets/images/xican.jpeg',
-        description: ''
+        description: 'whole duck, plum jam'
       },
       {
-        name: 'macaron',
+        name: 'Macaron',
         src: '/assets/images/macaron.jpg',
-        description: ''
+        description: 'egg whites, confectioners\' sugar'
       },
       {
-        name: 'spicypork',
+        name: 'Spicy Pork',
         src: '/assets/images/spicypork.jpg',
-        description: ''
+        description: 'pork belly, hot pepper paste,'
       },
       {
-        name: 'sushi',
+        name: 'Sushi',
         src: '/assets/images/sushi.jpeg',
-        description: ''
+        description: 'shrimp, sushi rice'
       },
       {
-        name: 'cupcake',
+        name: 'Cupcake',
         src: '/assets/images/cupcakes.jpg',
-        description: ''
+        description: 'self-rising flour, unsalted butter'
       },
     ],
 

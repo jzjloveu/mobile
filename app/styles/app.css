@@ -84,12 +84,18 @@ header a:last-child{
 .subTitle {
   position: absolute;
   background: url('../assets/images/white.png') repeat;
-  height: 35px;
+  height: 40px;
   bottom: 0px;
   width: 100%;
 }
 .subTitle h2 {
+  font-size: 15px;
+  margin-left:5px;
+}
+.subTitle p {
   font-size: 12px;
+  word-wrap: break-word;
+  margin-left:5px;
 }
 .search-rec {
   position: relative;
