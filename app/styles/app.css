@@ -214,6 +214,8 @@ ul.search-list .dish-image {
   position: relative;
   top: 46px;
   width: 220px;
+  box-shadow: 2px 2px 2px #888888;
+  border-radius: 23px;
 }
 #rating {
   left: 50%;
@@ -230,23 +232,18 @@ ul.search-list .dish-image {
   left: 10%;
   width: 80%;
   height: auto;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto; 
   position: relative;
 }
 #food-list li{
   list-style: none;
 }
-#iname {
-  margin-left: 0;
+
+#content h2 {
+  margin-left: 20px;
 }
-#food-list h2 {
-  float: left;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-left: -5%;
-  margin-bottom: 12px;
-}
+
 #step-layer {
   position: relative;
   height: auto;

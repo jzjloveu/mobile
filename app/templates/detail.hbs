@@ -12,11 +12,11 @@
 </div>
 </br>
 <div id="content">
-	<div id="food-list">
-		<h2>Food material :</h2></br><br>
+	<h2>Food material :</h2>
+	<div id="food-list">	
 		<div>
 		{{#each ingredients}}
-		    <li><span id="iname">{{i-name}} :</span><span id="icount">{{i-count}}</span></li>
+		    <li>{{i-name}}: {{i-count}}</li>
 		{{/each}}
 		</div>
 	</div>	
