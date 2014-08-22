@@ -1,9 +1,10 @@
 import Ember from 'ember';
 var ListController = Ember.ArrayController.extend({
+	/*
 	readMoreList:function(){
 		return this.get('model').slice(0,this.get('count'));
 	}.property(),
-	
+
 	count:5,
 	step:3,
 
@@ -19,7 +20,7 @@ var ListController = Ember.ArrayController.extend({
 			this.set('readMoreList',this.get('model').slice(0,this.get('count')));
 		},
 	},
-	
+	*/
 });
 
 export default ListController;
