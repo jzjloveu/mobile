@@ -325,6 +325,11 @@ a {
 #readmore {
   position: relative;
   left: 38%;
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+  padding: 8px;
+  font-size: 12px;
 }
 #searchButton {
   height: 20px;

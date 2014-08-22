@@ -1,8 +1,8 @@
 import Ember from 'ember';
 var ListController = Ember.ArrayController.extend({
 	readMoreList:[],
-	count:2,
-	step:2,
+	count:5,
+	step:3,
 
 	addCount:function(){
 		var count = this.get('count');
