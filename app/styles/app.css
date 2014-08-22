@@ -372,18 +372,33 @@ a {
   width: 22px;
   height: 15px;
  }
-#icount {
-  height: auto;
-  width: 25%;
-  position: relative;
-  float: left;
-  background-color: #FDFFE3;
-}
+
 #iname {
   height: auto;
   width: 60%;
   position: relative;
   float: left;
   margin-left: -6%;
-  background-color: #FDFFE3;
+  background-color: #FFFDB4;
+  border-top: 1px solid rgb(149, 225, 155); 
+  border-left: 1px solid rgb(149, 225, 155);
+  border-bottom: 1px solid rgb(149, 225, 155);
+}
+#icount {
+  height: auto;
+  width: 25%;
+  position: relative;
+  float: left;
+  font-style: italic;
+  color: rgb(181, 35, 35);
+  background-color: #FFFDB4;
+   border-top: 1px solid rgb(149, 225, 155); 
+  border-right: 1px solid rgb(149, 225, 155);
+  border-bottom: 1px solid rgb(149, 225, 155);
+}
+#iname li,
+#icount li{
+  border: 1px solid rgb(149, 225, 155);
+  text-align: center;
+  height: 23px;
 }
