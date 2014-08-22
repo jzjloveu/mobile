@@ -13,11 +13,16 @@
 </br>
 <div id="content">
 	<h2>Food material :</h2>
-	<div id="food-list">	
-		<div>
+	<div id="food-list">
+		<div id="iname">	
 		{{#each ingredients}}
-		    <li>{{i-name}}: {{i-count}}</li>
+		    <li>{{i-name}}:</li>
 		{{/each}}
+		</div>
+		<div id="icount">
+			{{#each ingredients}}
+				<li>{{i-count}}</li>
+			{{/each}}
 		</div>
 	</div>	
 	<div id="step-layer">
