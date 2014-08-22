@@ -24,40 +24,21 @@ var NewController = Ember.Controller.extend({
 			var _isEmpty = this.isEmpty();
 
 			var newdish = {
-				"dishName" :  this.get('name'),
-				"rate":  	  0,
-				"ratetimes":  0,
-				"imageUrl":   this.get('img'),
-				"category":   category,
-				"ingredients":this.get('stuff'),
-				"step": 	  this.get('step')
-			};
-
-			var newsearch = {
-				"dishname" : this.get('name'),
-				"rate":  	  0,
-				"image": 	 this.get('img'),
-				"stuff":     this.get('searchstuff')
+				dishName :  this.get('name'),
+				imageUrl:  this.get('img'),
+				ingredients:this.get('stuff'),
+				step: 		this.get('step')
 			};
 			//////PUT newdish, after PUT..... clear all the properties
-		
-			$.ajax({
-				type:'POST',
-      			url: 'http://localhost:3000/newrecipe',
-      			data: [newdish, newsearch ],
-      			
-      			success: function() {
-					self.clear();
-      			}  
-   			 });
-		
-		/*
+/*
 			if(_isEmpty){
 				alert("Your recipe is empty, please input the dish information!");
 			}else {
 				alert("not Empty, you can save it");
 			}
-		*/		
+*/
+			var category = $('.input:radio[name="category"]:checked').val();
+			alert(category);
 		}
 
 		
