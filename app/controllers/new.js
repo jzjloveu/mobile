@@ -36,7 +36,8 @@ var NewController = Ember.Controller.extend({
 			var newsearch = {
 				"dishname" : this.get('name'),
 				"dishimage": 	 this.get('img'),
-				"dishstuff":     this.get('searchstuff')
+				"dishstuff":     this.get('searchstuff'),
+				"category":   category,
 			};
 
 			var data = {
@@ -56,9 +57,10 @@ var NewController = Ember.Controller.extend({
 	      			data: data,
 	      			dataType:"json",
 	      			
-	      			success: function() {
+	      			success: function(data) {
 						alert("Thank you for sharing your cuisine!");
-						//self.transitionTo('detail');
+						var dishId = data[0];
+						self.transitionTo('detail',('category', {queryParams: {dishId: dishId}});
 						self.clear();
 	      			}
    			 	});
