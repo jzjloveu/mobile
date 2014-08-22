@@ -12,7 +12,7 @@ var SearchRoute = Ember.Route.extend({
      this.render('search');
   },
   model:function(params){
-   if (!params.category) {
+   if (params.category) {
     var dataObject = {
       "category": params.category
     }
@@ -25,10 +25,9 @@ var SearchRoute = Ember.Route.extend({
    }
    var dataList = $.ajax({
     //search the data on DB
-      url: 'http://localhost:3000/search',
-      data:  {
-      "search_word": params.keyword
-      },
+    //ec2-54-200-40-160.us-west-2.compute.amazonaws.com’
+      url: 'http://localhost:3000/' + url,
+      data:  dataObject,
       type: 'POST',
       success: function(data) {
         return data;

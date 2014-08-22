@@ -2,19 +2,27 @@
   <ul class="hotsearch">
     <li>
       <span>&bull;</span>
-      <a href="">Breakfast</a>
+      {{#link-to 'search' (query-params category="breakfast")}}
+         Breakfast
+      {{/link-to}}
     </li>
     <li>
       <span>&bull;</span>
-      <a href="">Lunch</a>
+      {{#link-to 'search' (query-params category="lunch")}}
+         Lunch
+      {{/link-to}}
     </li>
     <li>
       <span>&bull;</span>
-      <a href="">Dinner</a>
+      {{#link-to 'search' (query-params category="dinner")}}
+         Dinner
+      {{/link-to}}
     </li>
     <li>
       <span>&bull;</span>
-      <a href="">Dessert</a>
+      {{#link-to 'search' (query-params category="dissert")}}
+         Dessert
+      {{/link-to}}
     </li>
   </ul>
 </div>
