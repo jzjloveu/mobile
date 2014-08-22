@@ -27,8 +27,6 @@ var NewController = Ember.Controller.extend({
 
 			var newdish = {
 				"dishName" :  this.get('name'),
-				"rate":  	  0,
-				"ratetimes":  0,
 				"imageUrl":   this.get('img'),
 				"category":   category,
 				"ingredients":this.get('stuff'),
@@ -37,10 +35,15 @@ var NewController = Ember.Controller.extend({
 
 			var newsearch = {
 				"dishname" : this.get('name'),
-				"rate":  	  0,
 				"image": 	 this.get('img'),
 				"stuff":     this.get('searchstuff')
 			};
+
+			var data = {
+							"dish" : newdish,
+							"search" : newsearch 
+
+						};
 			//////POST newdish, then clear all the properties
 		
 			if(_isEmpty){
@@ -51,7 +54,8 @@ var NewController = Ember.Controller.extend({
 				$.ajax({
 					type:'POST',
 	      			url: 'http://localhost:3000/newrecipe',
-	      			data: [newdish, newsearch ],
+	      			data: data,
+	      			dataType:"json",
 	      			
 	      			success: function() {
 						self.clear();
