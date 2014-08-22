@@ -5,6 +5,7 @@ var NewController = Ember.Controller.extend({
 	img:  "" ,
 	stuff: [] ,
 	step:  [] ,
+	searchstuff: "",
 	stuffInput: [true],
 	stepInput: [true],
 
@@ -21,6 +22,7 @@ var NewController = Ember.Controller.extend({
 		
 			this.setStep();
 			this.setStuff();
+			var category = $('input[name=category]:checked').val();
 			var _isEmpty = this.isEmpty();
 
 			var newdish = {
@@ -64,14 +66,18 @@ var NewController = Ember.Controller.extend({
 		var step= [];
 		var len = this.get('stepInput').length;
 		for(var i=0; i<len ; i++){
-			step[i]=$('.step')[i].value ;
+			step[i]={
+				"step" : $('.step')[i].value ,
+			};
 		}
 		this.set('step',step);
 	},
 
 	setStuff: function(){
 		var stuff = [];
+		var searchstuff = "";		
 		var len = this.get('stuffInput').length;
+
 		for(var i=0; i<len ; i++){
 			var data = $('.stuff')[i].value;
 			var att = data.split(',');
@@ -79,8 +85,12 @@ var NewController = Ember.Controller.extend({
 		 		"i-name" : att[0] ,
 				"i-count" : att[1]
 			};
+			searchstuff+=att[0]+", ";
 		}
+
 		this.set('stuff',stuff);
+		this.set('searchstuff',searchstuff);
+
 	},
 
 	isEmpty: function(){
@@ -96,6 +106,7 @@ var NewController = Ember.Controller.extend({
 		this.set("img"  ,  "" );
 		this.set("stuff" , [] );
 		this.set("step" ,  [] );
+		this.set("searchstuff", "");
 		this.set("stuffInput" , [true]);
 		this.set("stepInput" , [true]);
 	}
