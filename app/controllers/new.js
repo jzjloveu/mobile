@@ -39,28 +39,25 @@ var NewController = Ember.Controller.extend({
 				"image": 	 this.get('img'),
 				"stuff":     this.get('searchstuff')
 			};
-			//////PUT newdish, after PUT..... clear all the properties
+			//////POST newdish, then clear all the properties
 		
-			$.ajax({
-				type:'POST',
-      			url: 'http://localhost:3000/newrecipe',
-      			data: [newdish, newsearch ],
-      			
-      			success: function() {
-					self.clear();
-      			}  
-   			 });
-		
-		/*
 			if(_isEmpty){
-				alert("Your recipe is empty, please input the dish information!");
+				alert("Your recipe is empty.");
 			}else {
-				alert("not Empty, you can save it");
+				
+				alert("Thank you for sharing your cuisine!");
+				$.ajax({
+					type:'POST',
+	      			url: 'http://localhost:3000/newrecipe',
+	      			data: [newdish, newsearch ],
+	      			
+	      			success: function() {
+						self.clear();
+	      			}
+   			 	});
 			}
-		*/		
-		}
-
-		
+			
+		}		
 	},
 
 	setStep: function() {
@@ -92,6 +89,15 @@ var NewController = Ember.Controller.extend({
 		}else{
 			return true;
 		}
+	},
+
+	clear: function(){
+		this.set("name"  , "" );
+		this.set("img"  ,  "" );
+		this.set("stuff" , [] );
+		this.set("step" ,  [] );
+		this.set("stuffInput" , [true]);
+		this.set("stepInput" , [true]);
 	}
 
 });
