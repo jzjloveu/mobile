@@ -155,7 +155,6 @@ var CategoryRoute = Ember.Route.extend({
 	],
 
     filterCategory: function(currid) {
-	    console.log('here' + currid);
 	    return this.get('categoryList').findBy('id', currid).lists;
 	},
 
