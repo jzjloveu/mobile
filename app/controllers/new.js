@@ -60,7 +60,7 @@ var NewController = Ember.Controller.extend({
 	      			success: function(data) {
 						alert("Thank you for sharing your cuisine!");
 						var dishId = data[0];
-						self.transitionTo('detail',('category', {queryParams: {dishId: dishId}});
+						self.transitionTo('detail',('category', {queryParams: {dishId: dishId}}));
 						self.clear();
 	      			}
    			 	});
