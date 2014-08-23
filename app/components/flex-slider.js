@@ -15,3 +15,4 @@ var FlexSliderComponent = Ember.Component.extend({
 });
 
 export default FlexSliderComponent;
+

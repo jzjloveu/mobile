@@ -10,7 +10,7 @@ var CommentsController = Ember.Controller.extend({
 			var self = this;
 			$.ajax({
 			    //record the data
-			      url: 'http://localhost:3000/comment/add',
+			      url: globalAddress + 'comment/add',
 			      data:  {
 			        "userName": self.get('name'),
 			        "dishId": currId,

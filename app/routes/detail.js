@@ -9,7 +9,7 @@ var DetailRoute = Ember.Route.extend({
 	model:function(params){
 	   var detailData = $.ajax({
 	    //search the data on DB
-	      url: 'http://localhost:3000/detail',
+	      url: globalAddress + 'detail',
 	      data:  {
 	        "id": params.dishId
 	      },

@@ -26,7 +26,7 @@ var SearchRoute = Ember.Route.extend({
    var dataList = $.ajax({
     //search the data on DB
     //ec2-54-200-40-160.us-west-2.compute.amazonaws.com’
-      url: 'http://localhost:3000/' + url,
+      url: globalAddress + url,
       data:  dataObject,
       type: 'POST',
       success: function(data) {

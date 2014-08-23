@@ -53,7 +53,7 @@ var NewController = Ember.Controller.extend({
 				alert("Thank you for sharing your cuisine!");
 				$.ajax({
 					type:'POST',
-	      			url: 'http://localhost:3000/newrecipe',
+	      			url: globalAddress + 'newrecipe',
 	      			data: data,
 	      			dataType:"json",
 	      			
