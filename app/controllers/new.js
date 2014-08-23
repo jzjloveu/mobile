@@ -35,8 +35,9 @@ var NewController = Ember.Controller.extend({
 
 			var newsearch = {
 				"dishname" : this.get('name'),
-				"image": 	 this.get('img'),
-				"stuff":     this.get('searchstuff')
+				"dishimage": 	 this.get('img'),
+				"dishstuff":     this.get('searchstuff'),
+				"category":   category,
 			};
 
 			var data = {
@@ -45,19 +46,21 @@ var NewController = Ember.Controller.extend({
 
 						};
 			//////POST newdish, then clear all the properties
-		
+			var self = this;
+
 			if(_isEmpty){
 				alert("Your recipe is empty.");
-			}else {
-				
-				alert("Thank you for sharing your cuisine!");
+			}else {							
 				$.ajax({
 					type:'POST',
 	      			url: globalAddress + 'newrecipe',
 	      			data: data,
 	      			dataType:"json",
 	      			
-	      			success: function() {
+	      			success: function(data) {
+						alert("Thank you for sharing your cuisine!");
+						var dishId = data[0];
+						self.transitionTo('detail',('category', {queryParams: {dishId: dishId}}));
 						self.clear();
 	      			}
    			 	});

@@ -235,14 +235,14 @@ ul.search-list .dish-image {
   list-style: none;
 }
 
-#content h2 {
+#content h3 {
   margin-left: 20px;
   margin-top: 2%;
 }
 #step-layer {
   position: relative;
   height: auto;
-  width: 90%;
+  width: 80%;
   left: 5%;
   top: 19px;
 }
