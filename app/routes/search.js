@@ -18,7 +18,7 @@ var SearchRoute = Ember.Route.extend({
     }
     var url = "category";
    } else {
-    var dataObject = {
+      var dataObject = {
       "search_word": params.keyword
     }
     var url = "search"
