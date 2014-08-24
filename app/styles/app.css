@@ -414,3 +414,7 @@ a {
   margin-bottom: 10px;
   color: red;
 }
+header img {
+  top: 11px;
+  position: relative;
+}
