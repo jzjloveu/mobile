@@ -20,6 +20,7 @@ var CommentsController = Ember.Controller.extend({
 			      },
 			      type: 'POST',
 			      success: function(data) {
+			      	//clear form
 			      	self.set('name', '');
 			      	self.set('rate', 0);
 			      	self.set('note', '');

@@ -11,8 +11,8 @@ var StarRatingComponent = Ember.Component.extend({
     actions: {
         click: function(star,clickable){
             if(clickable){    
-            this.set('starRating', star.index);
-            this.sendAction('action', star.index);
+                this.set('starRating', star.index);
+                this.sendAction('action', star.index);
             }
         }
     },
