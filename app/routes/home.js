@@ -5,7 +5,11 @@ var HomeRoute = Ember.Route.extend({
 	 this.render('home');
 	},
 	beforeModel: function() {
-		this.transitionTo('category', {queryParams: {categoryId: 'Meat'}});
+		if(sessionStorage.getItem("loginState")){
+			this.transitionTo('category', {queryParams: {categoryId: 'Meat'}});
+		}else{
+			this.transitionTo('login');
+		}
 	}
 });
 

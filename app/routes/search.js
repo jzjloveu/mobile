@@ -11,6 +11,12 @@ var SearchRoute = Ember.Route.extend({
   renderTemplate: function() {
      this.render('search');
   },
+
+  beforeModel: function() {
+    if(!sessionStorage.getItem("loginState")){
+      this.transitionTo('login');
+    }
+  },
   model:function(params){
    if (params.category) {
     var dataObject = {

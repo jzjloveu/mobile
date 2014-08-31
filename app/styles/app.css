@@ -418,3 +418,62 @@ header img {
   top: 11px;
   position: relative;
 }
+div.login-content {
+  position: absolute;
+  top: 42px;
+  width: 100%;
+  height: 100%;
+  background: #77D8A4; 
+}
+.login-content h3 {
+  position: relative;
+  font-size: 35px;
+  top: 142px;
+  text-align: center;
+}
+.login-content ul{
+  text-align: center;
+}
+.login-content input{
+  height: 20px;
+  padding: 5px;
+  position: relative;
+  margin-bottom: 10px;
+  top: 160px
+}
+
+.loginButton {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+  width: 186px;
+  height: 30px;
+  position: relative;
+  top: 164px;
+  padding: 5px;
+}
+.destroy{
+  position: relative;
+  left: 60%;
+  top: -25px;
+  font-size: 18px;
+}
+.hidden{
+  display: none;
+}
+footer {
+  text-align: center;
+  z-index: 2;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 44px;
+  border-top: 1px solid #ccc;
+  background: #77D8A4;
+}
+footer span{
+  color: white;
+  font-size: 19px;
+  top: 10px;
+  position: relative;
+}

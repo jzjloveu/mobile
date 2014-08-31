@@ -13,7 +13,7 @@ var ListRoute = Ember.Route.extend({
 			      	return data;
 			      }
 	       });
-	},
+	}
 });
 
 export default ListRoute;

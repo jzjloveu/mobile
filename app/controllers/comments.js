@@ -2,7 +2,9 @@ import Ember from 'ember';
 
 var CommentsController = Ember.Controller.extend({
 	rate: 0,
-	name: '',
+	name:function(){
+		return	sessionStorage.getItem("username");
+	}.property(),
 	note:'',
 	actions: {
 		submit: function() {
@@ -21,7 +23,6 @@ var CommentsController = Ember.Controller.extend({
 			      type: 'POST',
 			      success: function(data) {
 			      	//clear form
-			      	self.set('name', '');
 			      	self.set('rate', 0);
 			      	self.set('note', '');
 			      	self.transitionTo('list');

@@ -68,7 +68,6 @@ var NewController = Ember.Controller.extend({
 			
 		}		
 	},
-
 	setStep: function() {
 		var step= [];
 		var len = this.get('stepInput').length;

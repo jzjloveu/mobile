@@ -1,7 +1,7 @@
 import Ember from 'ember';
 var DetailController = Ember.Controller.extend({
 	queryParams: ['dishId'],
-	dishId:''
+	dishId:'',
 });
 
 export default DetailController;
