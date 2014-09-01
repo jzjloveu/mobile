@@ -305,6 +305,7 @@ label {
 .subContent {
   border-top: 1px solid #cccccc;
   margin-top: 40px;
+  padding-bottom: 56px;
 }
 a {
   text-decoration: none;
@@ -467,7 +468,7 @@ footer {
   position: fixed;
   bottom: 0px;
   width: 100%;
-  height: 44px;
+  height: 40px;
   border-top: 1px solid #ccc;
   background: #77D8A4;
 }
