@@ -2,15 +2,19 @@ import Ember from 'ember';
 var LoginController = Ember.Controller.extend({
 	username: null,
 	password: null,
-	//loginState:false,
+
+	reset: function() {
+	    this.setProperties({
+	      username: "",
+	      password: ""
+	    });
+	},
 
 	actions:{
 		login:function(){
 			var username = this.get('username'),
 				password = this.get('password');
 			if(username==='admin' && password==='admin') {
-				//this.set('loginState',true);
-				loginState = true;
 				sessionStorage.setItem("username",username);
 				sessionStorage.setItem("loginState", true);
 				this.transitionTo('home');

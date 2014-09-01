@@ -7,6 +7,7 @@ var ApplicationController = Ember.ArrayController.extend({
 		
 		logout:function(){
 			sessionStorage.clear();
+			this.controllerFor('login').reset();
 			this.transitionTo('login');
 		}
 	}
