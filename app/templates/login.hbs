@@ -3,8 +3,8 @@
  </header>
 <div class='login-content'>
 	<ul>
-		<li>{{input type='text' placeholder='Username' value=username}}</li>
-		<li>{{input type='password' placeholder='Password' value=password}}</li>
+		<li>{{input type='text' placeholder='Username' value=username autofocus='autofocus'}}</li>
+		<li>{{input type='password' placeholder='Password' value=password action='login' onEvent='keypress'}}</li>
 		<li><button class='loginButton' {{action 'login'}}>login</button></li>	
 	</ul>
 </div>
