@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 var NewRoute = Ember.Route.extend({
 	beforeModel: function() {
-		if(!loginState){
+		if(!sessionStorage.getItem("loginState")){
 			this.transitionTo('login');
 		}
 	},
