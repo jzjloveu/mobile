@@ -14,7 +14,8 @@ var LoginController = Ember.Controller.extend({
 		login:function(){
 			var username = this.get('username'),
 				password = this.get('password');
-			if(username==='admin' && password==='admin') {
+			if((username==='admin' && password==='admin') || 
+				(username==='paul' && password==='paul')) {
 				sessionStorage.setItem("username",username);
 				sessionStorage.setItem("loginState", true);
 				this.transitionTo('home');
