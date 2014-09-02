@@ -153,6 +153,7 @@ ul.search-list {
   width: 100%;
   height: auto;
   padding-left: 0px;
+  padding-bottom: 56px;
   list-style: none;
   z-index: 1;
   border-top: 1px solid #ccc;
