@@ -1,0 +1,13 @@
+Tools needed to run ember server
+	* node.js
+	* npm
+	* ember-cli
+		* npm install -g ember-cli
+		
+
+To initialize ember server
+	* ember init
+	
+To run ember server
+	* ember server
+	
